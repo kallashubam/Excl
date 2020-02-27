@@ -29,7 +29,7 @@ import org.openqa.selenium.support.ui.Select;
 		/*System.setProperty("webdriver.gecko.driver","D:\\Shubam automation\\geckodriver.exe");
 	    driver = new FirefoxDriver();*/
 		 
-		 System.setProperty("webdriver.chrome.driver","G:\\AutomationScripts\\chromedriver.exe");
+		 System.setProperty("webdriver.chrome.driver","D:\\Shubam automation\\chromedriver.exe");
 	        driver = new ChromeDriver();
 	        driver.manage().window().maximize();
 	          
@@ -115,7 +115,7 @@ import org.openqa.selenium.support.ui.Select;
 	    	System.out.print("Hi This is Devesh Kumar");
 	    	System.out.print("This is Shubam");
 	    	
-    	
+    	 
 	 
 	 
  }	 
