@@ -111,11 +111,6 @@ import org.openqa.selenium.support.ui.Select;
       {	 
           
           
-	    	System.out.print("Hi This is Devesh Kumar");
-	    	System.out.print("Hi This is Devesh Kumar");
-	    	System.out.print("This is Shubam");
-	    	System.out.print("This is a test for mili ");
-	    	System.out.print("This is a test for mili and anuj ");
     	 
 	 
 	 
