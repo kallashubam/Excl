@@ -8,6 +8,7 @@ import java.util.concurrent.TimeUnit;
 //import javax.xml.bind.JAXBElement.GlobalScope;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.By.ById;
 import org.openqa.selenium.WebDriver;
 //import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.WebElement;
@@ -110,11 +111,15 @@ import org.openqa.selenium.support.ui.Select;
       
       {	 
     	  driver.findElement(By.xpath("//*[@id=\"vmenu\"]/ul/li[3]")).click();
-    	  Thread.sleep(2000);
           driver.findElement(By.xpath("//*[@id=\"vmenu\"]/ul/li[3]/div/ul/li[1]/a")).click();
-    	  
-	 
-	 
+          driver.findElement(By.xpath("//*[@id=\"vmenu\"]/ul/li[3]/div/ul/li[1]/ul/li[3]/a")).click();
+          driver.findElement(By.xpath("//*[@id=\"vhld\"]/section/aside[2]/div/a")).click();	
+          driver.findElement(By.xpath("//*[@id=\"vhld\"]/div/section/div[1]/div[1]/ul/li[1]/input[4]")).sendKeys("Welcome Campaign");
+          Thread.sleep(1000);
+          Select  Languagedropdown= new Select(driver.findElement(By.xpath("//*[@id=\"uniform-undefined\"]/select"))); 
+ 		  Languagedropdown.selectByValue("EN");
+ 		  driver.findElement(By.id("chars")).sendKeys("Hi This is Welcome Campaign");
+ 		  
  }	 
 		 
 } 

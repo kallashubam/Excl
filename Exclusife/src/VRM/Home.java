@@ -11,11 +11,11 @@ public class Home {
 		Bs.Login();
 		Thread.sleep(5000);
 		Bs.OTP();
-		Bs.click_Register();
-		Bs.Register_Customer();
-		Bs.Save_Details();
+		//Bs.click_Register();
+		//Bs.Register_Customer();
+		//Bs.Save_Details();
 		Thread.sleep(10000);
-		Bs.ShowCustomer_Details();
+		//Bs.ShowCustomer_Details();
 		Bs.Welcome_Campaign();
     }
 }
