@@ -105,12 +105,14 @@ import org.openqa.selenium.support.ui.Select;
 		 
 	 }	
 
-      public void Welcome_Campaign() 
+      public void Welcome_Campaign() throws InterruptedException 
       
       
       {	 
-   
-          
+    	  driver.findElement(By.xpath("//*[@id=\"vmenu\"]/ul/li[3]")).click();
+    	  Thread.sleep(2000);
+          driver.findElement(By.xpath("//*[@id=\"vmenu\"]/ul/li[3]/div/ul/li[1]/a")).click();
+    	  
     	 
 	 
 	 
