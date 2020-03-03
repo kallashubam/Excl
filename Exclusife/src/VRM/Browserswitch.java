@@ -119,10 +119,15 @@ import org.openqa.selenium.support.ui.Select;
           Select  Languagedropdown= new Select(driver.findElement(By.xpath("//*[@id=\"uniform-undefined\"]/select"))); 
  		  Languagedropdown.selectByValue("EN");
  		  driver.findElement(By.id("chars")).sendKeys("Hi This is Welcome Campaign");
- 	 
+ 		// String filePath = System.getProperty( "C:\\Users\\Flag.JPEG") ; 		 	
+ 		// WebElement chooseFile = driver.findElement(By.cssSelector("input#file"));
+ 		//chooseFile.sendKeys("Flag.jpg");
+ 		
+          driver.findElement(By.xpath("//*[@id=\"vhld\"]/div/section/div[1]/div[2]/ul/li[4]/input")).sendKeys("0");
+ 		  
  }	 
-		 
+        
 } 
  	
-	 
+
  
