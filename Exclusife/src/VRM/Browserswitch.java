@@ -9,6 +9,7 @@ import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.By.ById;
+import org.openqa.selenium.By.ByName;
 import org.openqa.selenium.WebDriver;
 //import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.WebElement;
@@ -125,8 +126,12 @@ import org.openqa.selenium.support.ui.Select;
  		
           driver.findElement(By.xpath("//*[@id=\"vhld\"]/div/section/div[1]/div[2]/ul/li[4]/input")).sendKeys("0");
           driver.findElement(By.xpath("//*[@id=\"vhld\"]/div/section/div[2]/ul/li/h5")).click();	
-          
-
+          driver.findElement(By.name("coupon_flag")).click();
+          Select  Discount_dropdown= new Select(driver.findElement(By.name("discount_type"))); 
+ 		  Discount_dropdown.selectByValue("value");
+ 		 JavascriptExecutor jse = (JavascriptExecutor)driver;
+         jse.executeScript("window.scrollBy(0,250)");
+		 
  		  
  }	 
         
