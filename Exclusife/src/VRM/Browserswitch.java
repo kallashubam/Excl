@@ -131,10 +131,20 @@ import org.openqa.selenium.support.ui.Select;
  		  Discount_dropdown.selectByValue("value");
  		 JavascriptExecutor jse = (JavascriptExecutor)driver;
          jse.executeScript("window.scrollBy(0,250)");
-		 
- 		  
- }	 
-        
+         driver.findElement(By.name("discount_value")).sendKeys("100");
+         driver.findElement(By.name("max_amount")).sendKeys("500");
+         driver.findElement(By.name("min_amount")).sendKeys("1500");
+         Select  Discountapplicable_dropdown= new Select(driver.findElement(By.xpath("//*[@id=\"discount_applicable_type\"]")));
+		  Discountapplicable_dropdown.selectByVisibleText("Exclude Items");
+		  driver.manage().timeouts().implicitlyWait(500, TimeUnit.SECONDS);
+		  Thread.sleep(1000);
+		  driver.findElement(By.xpath("//*[@id=\"popupContact1\"]/div[2]/section/div/div[2]/div/div/ul/li[5]/strong/a")).click();
+		  Thread.sleep(1000);
+		  driver.findElement(By.id("orderproduct_id_489_11392")).click(); 
+		  driver.findElement(By.id("apply_service")).click(); 
+		  driver.findElement(By.xpath("//*[@id=\"vhld\"]/div/section/div[4]/input\r\n")).click();
+
+      }
 } 
  	
 
