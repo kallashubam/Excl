@@ -151,8 +151,6 @@ import org.openqa.selenium.support.ui.Select;
 	         driver.findElement(By.name("submit")).click();
 	         driver.findElement(By.xpath("/html/body/div[10]/div/div/button")).click();
 
-
-
       }
 } 
  	
