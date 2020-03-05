@@ -143,7 +143,15 @@ import org.openqa.selenium.support.ui.Select;
 		  driver.findElement(By.id("orderproduct_id_489_11392")).click(); 
 		  driver.findElement(By.id("apply_service")).click(); 
 		  Thread.sleep(5000);
-		  driver.findElement(By.xpath("//*[@id=\"vhld\"]/div/section/div[4]/input\r\n")).click();
+		 JavascriptExecutor jse1 = (JavascriptExecutor)driver;
+	         jse1.executeScript("window.scrollBy(0,200)");
+		  driver.findElement(By.xpath("//*[@id=\"vhld\"]/div/section/div[4]/input")).click();
+		  JavascriptExecutor approve = (JavascriptExecutor)driver;
+	         approve.executeScript("window.scrollBy(0,200)");
+	         driver.findElement(By.name("submit")).click();
+	         driver.findElement(By.xpath("/html/body/div[10]/div/div/button")).click();
+
+
 
       }
 } 
