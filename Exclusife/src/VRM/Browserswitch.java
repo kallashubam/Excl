@@ -142,6 +142,7 @@ import org.openqa.selenium.support.ui.Select;
 		  Thread.sleep(1000);
 		  driver.findElement(By.id("orderproduct_id_489_11392")).click(); 
 		  driver.findElement(By.id("apply_service")).click(); 
+		  Thread.sleep(5000);
 		  driver.findElement(By.xpath("//*[@id=\"vhld\"]/div/section/div[4]/input\r\n")).click();
 
       }
