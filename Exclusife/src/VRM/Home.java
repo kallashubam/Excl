@@ -11,7 +11,7 @@ public class Home {
 		Bs.Login();
 		Thread.sleep(2000);
 		Bs.OTP();
-		 Bs.click_Register();
+		Bs.click_Register();
 		Bs.Register_Customer();
 		Bs.Save_Details();
 		Thread.sleep(8000);
