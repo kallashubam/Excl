@@ -155,15 +155,16 @@ import org.openqa.selenium.support.ui.Select;
       
       
       
-      public void Birthday_Wish() 
-      
+      public void Birthday_Wish() throws InterruptedException 
       {
     	  driver.findElement(By.xpath("//*[@id=\"vmenu\"]/ul/li[3]")).click();
           driver.findElement(By.xpath("//*[@id=\"vmenu\"]/ul/li[3]/div/ul/li[1]/a")).click();
-
-
-    	  
-		
+          driver.findElement(By.xpath("//*[@id=\"vmenu\"]/ul/li[3]/div/ul/li[1]/ul/li[1]/a")).click();
+          driver.findElement(By.xpath("//*[@id=\"vhld\"]/section/aside[2]/div/a")).click();
+          driver.findElement(By.xpath("//*[@id=\"vhld\"]/div/section/div[1]/div[1]/ul/li[1]/input[4]")).sendKeys("Happy Birthday");
+          Thread.sleep(1000);
+          Select  Languagedropdown= new Select(driver.findElement(By.xpath("//*[@id=\"uniform-undefined\"]/select"))); 
+ 		  Languagedropdown.selectByValue("EN");
 	}
 } 
  	
