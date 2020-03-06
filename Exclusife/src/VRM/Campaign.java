@@ -13,5 +13,6 @@ public class Campaign {
 		Bs.OTP();
 		Thread.sleep(5000);
 		Bs.Welcome_Campaign();
+		Bs.Birthday_Wish();
     }
 }

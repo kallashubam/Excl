@@ -152,6 +152,19 @@ import org.openqa.selenium.support.ui.Select;
 	         driver.findElement(By.xpath("/html/body/div[10]/div/div/button")).click();
 
       }
+      
+      
+      
+      public void Birthday_Wish() 
+      
+      {
+    	  driver.findElement(By.xpath("//*[@id=\"vmenu\"]/ul/li[3]")).click();
+          driver.findElement(By.xpath("//*[@id=\"vmenu\"]/ul/li[3]/div/ul/li[1]/a")).click();
+
+
+    	  
+		
+	}
 } 
  	
 
