@@ -12,7 +12,7 @@ public class Campaign {
 		Thread.sleep(2000);
 		Bs.OTP();
 		Thread.sleep(5000);
-		 Bs.Welcome_Campaign();
+		Bs.Welcome_Campaign();
 		Bs.Birthday_Wish();
     }
 }
